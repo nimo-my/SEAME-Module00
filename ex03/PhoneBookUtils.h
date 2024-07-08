@@ -5,7 +5,7 @@
 #include <iostream>
 #include <string>
 
-#define PRINT_LINE " ==============================================================="
+#define PRINT_LINE " ======================================================="
 #define PRINT_OPTIONS "* USAGE : Please type one keywords between [ADD, SEARCH, REMOVE, BOOKMARK, EXIT]. *"
 #define ENTER_COMMANDS "============= Welcome! this is a PHONEBOOK program! ============="
 #define EMPTY_VALUE "* PHONEBOOK : Empty value can't be stored. please write more!"

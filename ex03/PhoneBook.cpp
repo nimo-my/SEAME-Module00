@@ -106,7 +106,8 @@ void PhoneBook::removePages()
     else
     {
         this->showPages();
-        std::cout << "Remove method : press 1 to erase by index / press 2 to erase by phone number ." << std::endl;
+        std::cout << "======== Remove method ======== " << std::endl;
+        std::cout << " press '1' to erase by index / press '2' to erase by phone number." << std::endl;
         std::getline(std::cin, input);
         if (std::cin.eof())
         {
@@ -216,9 +217,9 @@ void PhoneBook::printBookmarkAllInfo(std::size_t index)
 void PhoneBook::printAllInfo(std::size_t index)
 {
     std::cout << std::setw(10) << checkLength(this->db[index]->getIndex()) << "|";
-    std::cout << std::setw(10) << checkLength(this->db[index]->getName()) << "|";
-    std::cout << std::setw(10) << checkLength(this->db[index]->getNickName()) << "|";
-    std::cout << std::setw(10) << checkLength(this->db[index]->getPhoneNumber()) << "|";
+    std::cout << std::setw(14) << checkLength(this->db[index]->getName()) << "|";
+    std::cout << std::setw(17) << checkLength(this->db[index]->getNickName()) << "|";
+    std::cout << std::setw(18) << checkLength(this->db[index]->getPhoneNumber()) << "|";
 
     std::cout << std::endl;
 }
